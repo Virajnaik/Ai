@@ -283,7 +283,6 @@ input[type="text"]:focus {
   color: var(--text-light);
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -305,7 +304,6 @@ input[type="text"]:focus {
 
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .sidebar {
       width: 0;
