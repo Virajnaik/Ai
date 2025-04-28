@@ -15,7 +15,7 @@
                 <h3>Viraj's AI</h3>
             </div>
             <div class="chat-history-list">
-                <!-- Could add previous chats here -->
+           
             </div>
             <div class="user-profile">
                 <div class="avatar">V</div>
@@ -71,7 +71,7 @@
     </div>
 
     <script>
-      // Scroll management
+     
       function maintainScrollPosition() {
           const chatHistory = document.getElementById('chat-history');
           const wasScrolledToBottom = chatHistory.scrollHeight - chatHistory.clientHeight <= chatHistory.scrollTop + 1;
@@ -81,12 +81,10 @@
           }
       }
   
-      // Initial scroll to bottom
       window.addEventListener('load', function() {
           const chatHistory = document.getElementById('chat-history');
           chatHistory.scrollTop = chatHistory.scrollHeight;
           
-          // Set up mutation observer
           const observer = new MutationObserver(function(mutations) {
               maintainScrollPosition();
           });
@@ -97,7 +95,6 @@
           });
       });
   
-      // Form submission handling
       document.querySelector('form').addEventListener('submit', function() {
           setTimeout(maintainScrollPosition, 50);
       });
